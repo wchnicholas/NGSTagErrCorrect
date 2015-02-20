@@ -1,0 +1,5 @@
+Fastq2ErrorFreeFasta.py
+A script for error correction using molecular tag. For detail usage, type python Fastq2ErrorFreeFasta.py -h
+
+qseq2fq.sh
+A script for converting .qseq.gz to .fastq format
