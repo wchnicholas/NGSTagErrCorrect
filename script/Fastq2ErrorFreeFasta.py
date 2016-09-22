@@ -119,7 +119,7 @@ def errorcorrect(tmp,ofile,Ecutoff,Scutoff):
 
 #PARSING ARGUMENTS
 def ParseArg():
-  usage  = 'python script/Fastq2ErrorFreeFasta.py -i FOLDER -o DESTINATION FILE -p POSITION RANGE -F STRING -R STRING -d INTEGER -b POSITION RANGE -p POSITION RANGE'
+  usage  = 'python script/Fastq2ErrorFreeFasta.py -i FOLDER -o DESTINATION FILE -b POSITION RANGE -p POSITION RANGE -F STRING -R STRING -d INTEGER -e FLOAT -s INTEGER'
   desc   = 'Note: This script is for paired-end reads and Barcode and tag should be at the 5\' end before the reads. At this current version, all parameters should be given. A larger the decomposer parameter will decrease memory usage. But too high will cause problem in python. Recommend using decomposer = 3 or 4'
   parser = OptionParser(description=desc, usage=usage)
   parser.add_option("-i",help="folder containing all fastq (.fq.gz or fastq.gz) files (e.g. fastq/)", metavar="FOLDER")
